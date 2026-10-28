@@ -1,41 +1,41 @@
-# Olist-E-Commerce-Dataset
-This project analyzes ~100,000 orders from the Olist E-Commerce public dataset to identify revenue drivers, operational bottlenecks, and customer retention opportunities.
+# Olist E-Commerce Analysis
 
-The goal was to move beyond simple reporting and answer: "How can Olist scale beyond its current $15.88M revenue milestone?" The analysis revealed a critical "Leaky Bucket" problem with customer retention and a direct correlation between logistics performance and brand sentiment.
+Analysis of about 100,000 orders from the public Olist e-commerce dataset, to find revenue drivers, delivery problems and customer retention opportunities.
 
-Data Cleaning & Engineering
-Before analysis, the raw data required significant transformation using Power Bi
-Feature Engineering: Created new columns for delivery_delay_time (Actual Delivery - Estimated Delivery) to analyze logistics performance.
-Filtering: Removed canceled orders to focus strictly on completed financial transactions.
+**Question:** How can Olist grow beyond its current revenue of R$15.88M?
 
-Key Insights & Visualizations
-1. Financial Performance
-Total Revenue: $15.88 Million.
-Average Order Value (AOV): $160.91.
-Top Category: Health & Beauty (beleza_saude) is the #1 revenue driver, followed by Watches.
-Seasonality: Revenue shows distinct spikes in November, correlating with Black Friday promotions.
+**Tools used:** Excel (data cleaning, formulas, PivotTables) and Power BI (modelling and dashboards)
 
-Geographic Dominance
-Core Market: 67% of all revenue is generated in the Southeast region.
-The Hub: São Paulo (SP) alone contributes ~42% of total sales volume.
-Insight: Marketing spend outside the Southeast yields diminishing returns compared to the core SP-RJ-MG triangle.
+**Data:** Olist e-commerce public dataset
 
-The "Pain Point": Logistics vs. Satisfaction
-Correlation: A scatter plot analysis confirmed a strong negative correlation between delivery days and review scores.
-The "Late" Impact: While 92% of orders are on time, the ~8,000 late orders generate the vast majority of 1-star reviews.
-Problem Categories: "Office Furniture" and "Small Appliances" suffer the most from shipping delays.
+## Data preparation
+- Used Excel to clean and prepare the data, create formulas and calculated columns, build PivotTables and summaries, and check the data before loading it into Power BI.
+- Created a `delivery_delay_time` column (actual delivery minus estimated delivery) to measure logistics performance.
+- Removed canceled orders so the analysis covers completed transactions only.
 
-Retention Reality (The "Leaky Bucket")
-Churn Rate: 97% of customers are one-time buyers.
-Loyalty: Only ~3% of users return for a second purchase.
-Opportunity: The business is heavily reliant on acquisition. A slight increase in retention could drastically lower Customer Acquisition Costs (CAC).
+## Key findings
 
-Business Recommendations
-Based on the data, the following strategic actions are recommended:
+**Financial performance**
+- Total revenue: R$15.88M. Average order value: R$160.91.
+- Top category: Health & Beauty, followed by Watches.
+- Revenue peaks in November.
 
-Logistics Optimization: Renegotiate shipping contracts for the Southeast region specifically for heavy items (Furniture) to eliminate the 8% "Late Delivery" rate.
-Retention Program: Launch a "Second Purchase" coupon campaign targeting the Health & Beauty segment, as this is the highest volume category with the lowest barrier to re-entry.
+**Geography**
+- The Southeast region generates 67% of revenue.
+- São Paulo alone accounts for about 42% of sales volume.
 
-Contact
-Author: Comfort Christopher
-Email: udohcomfortj5@gmail.com
+**Delivery and customer satisfaction**
+- Delivery days and review scores are strongly negatively correlated.
+- About 92% of orders arrive on time, but the roughly 8,000 late orders account for most 1-star reviews.
+- Office Furniture and Small Appliances are the most affected by delays.
+
+**Customer retention**
+- 97% of customers bought only once, and only about 3% returned for a second purchase.
+
+## Recommendations
+1. Renegotiate shipping for heavy items, such as furniture, in the Southeast to reduce late deliveries.
+2. Run a second-purchase coupon campaign in Health & Beauty, the highest-volume category.
+
+## Author
+Comfort Udoh, Data Analyst
+Email: comyj5@gmail.com
